@@ -1,122 +1,120 @@
-import home_1 from '@assets/img/menu/menu-home-1.jpg';
-import home_2 from '@assets/img/menu/menu-home-2.jpg';
-import home_3 from '@assets/img/menu/menu-home-3.jpg';
-import home_4 from '@assets/img/menu/menu-home-4.jpg';
+import home_1 from "@assets/img/menu/menu-home-1.jpg";
+import home_2 from "@assets/img/menu/menu-home-2.jpg";
+import home_3 from "@assets/img/menu/menu-home-3.jpg";
+import home_4 from "@assets/img/menu/menu-home-4.jpg";
 
 const menu_data = [
   {
     id: 1,
-    homes: true,
-    title: 'Home',
-    link: '/',
-    home_pages: [
-      {
-        img: home_1,
-        title: 'Electronics',
-        link: '/'
-      },
-      {
-        img: home_2,
-        title: 'Fashion',
-        link: '/home-2'
-      },
-      {
-        img: home_3,
-        title: 'Beauty',
-        link: '/home-3'
-      },
-      {
-        img: home_4,
-        title: 'Jewelry',
-        link: '/home-4'
-      }
-    ]
+    single_link: true,
+    title: "Home",
+    link: "/",
+  },
+  {
+    id: 2,
+    single_link: true,
+    title: "About",
+    link: "/about",
   },
   {
     id: 2,
     products: true,
-    title: 'Products',
-    link: '/shop',
+    title: "Services",
+    link: "/services",
     product_pages: [
       {
-        title: 'Shop Page',
-        link: '/shop',
+        title: "Handyman",
+        link: "/handyman",
         mega_menus: [
-          { title: 'Only Categories', link: '/shop-category' },
-          { title: 'Shop Grid with Sideber', link: '/shop' },
-          { title: 'Product Details', link: '/product-details' },
-        ]
+          { title: "Home Maintenance", link: "/home-maintenance" },
+          { title: "Emergency Home Repair", link: "/emergency-home-repair" },
+          { title: "Local Handyman", link: "/local-handyman" },
+          {
+            title: "Tv Wall Bracket Installation",
+            link: "/tv-wall-bracket-installation",
+          },
+          {
+            title: "Floating Shelves Hanging",
+            link: "/floating-shelves-hanging",
+          },
+          { title: "Curtains Installation", link: "/curtains-installation" },
+          { title: "Cheap Handyman", link: "/Cheap Handyman" },
+        ],
       },
       {
-        title: 'Products',
-        link: '/product-details',
+        title: "Carpenter",
+        link: "/carpenter",
         mega_menus: [
-          { title: 'Product Simple', link: '/product-details' },
-          { title: 'With Video', link: '/product-details-video' },
-          { title: 'With Countdown Timer', link: '/product-details-countdown' },
-          { title: 'Variations Swatches', link: '/product-details-swatches' },
-        ]
+          { title: "Handyman Carpenter", link: "/handyman-carpenter" },
+          { title: "Partition Wall Making", link: "/partition-wall-making" },
+          { title: "With Countdown Timer", link: "/product-details-countdown" },
+          { title: "Furniture Assembly", link: "/furniture-assembly" },
+        ],
       },
       {
-        title: 'eCommerce',
-        link: '/shop',
+        title: "Electrician",
+        link: "/electrician",
         mega_menus: [
-          { title: 'Shopping Cart', link: '/cart' },
-          { title: 'Compare', link: '/compare' },
-          { title: 'Wishlist', link: '/wishlist' },
-          { title: 'Checkout', link: '/checkout' },
-          { title: 'My account', link: '/profile' },
-        ]
+          { title: "Emergency Electrician", link: "/emergency-electrician" },
+          { title: "Handyman Electrician", link: "/handyman-electrician" },
+          {
+            title: "Fixing Chandelier Light",
+            link: "/fixing-chandelier-light",
+          },
+          {
+            title: "Hanging Lamp Light",
+            link: "/hanging-lamp-light",
+          },
+        ],
       },
       {
-        title: 'More Pages',
-        link: '/shop',
+        title: "Home Appliances",
+        link: "/home-appliances",
         mega_menus: [
-          { title: 'Login', link: '/login' },
-          { title: 'Register', link: '/register' },
-          { title: 'Forgot Password', link: '/forgot' },
-          { title: '404 Error', link: '/404' },
-        ]
+          { title: "Washing Machine Repair", link: "/Washing Machine Repair" },
+          {
+            title: "AC Filter Duct Cleaning",
+            link: "/ac-filter-duct-cleaning",
+          },
+          {
+            title: "AC Repair Services",
+            link: "/ac-repair-services",
+          },
+          {
+            title: "Fridge Repair",
+            link: "/fridge-repair",
+          },
+        ],
       },
-    ]
-  },
-  {
-    id: 3,
-    sub_menu: true,
-    title: 'Shop',
-    link: '/shop',
-    sub_menus: [
-      { title: 'Shop', link: '/shop' },
-      { title: 'Right Sidebar', link: '/shop-right-sidebar' },
-      { title: 'Hidden Sidebar', link: '/shop-hidden-sidebar' },
+      {
+        title: "Plumber",
+        link: "/plumber",
+        mega_menus: [
+          { title: "Emergency Plumber", link: "/emergency-plumber" },
+          { title: "Blocked Drain Cleaner", link: "/blocked-drain-cleaner" },
+          {
+            title: "Electric Water Heater Repair",
+            link: "/electric-water-heater-repair",
+          },
+        ],
+      },
+      {
+        title: "Painter",
+        link: "/painter",
+        mega_menus: [
+          { title: "Wallpaper Mixing", link: "/wallpaper-mixing" },
+          { title: "Wall Painting", link: "/wall-painting" },
+        ],
+      },
     ],
   },
   {
-    id: 4,
+    id: 3,
     single_link: true,
-    title: 'Coupons',
-    link: '/coupon',
+    title: "Contact",
+    link: "/contact",
   },
-  {
-    id: 5,
-    sub_menu: true,
-    title: 'Blog',
-    link: '/blog',
-    sub_menus: [
-      { title: 'Blog Standard', link: '/blog' },
-      { title: 'Blog Grid', link: '/blog-grid' },
-      { title: 'Blog List', link: '/blog-list' },
-      { title: 'Blog Details', link: '/blog-details' },
-      { title: 'Blog Details Full Width', link: '/blog-details-2' },
-    ]
-  },
-  {
-    id: 6,
-    single_link: true,
-    title: 'Contact',
-    link: '/contact',
-  },
-]
+];
 
 export default menu_data;
 
@@ -124,96 +122,118 @@ export default menu_data;
 export const mobile_menu = [
   {
     id: 1,
-    homes: true,
-    title: 'Home',
-    link: '/',
-    home_pages: [
-      {
-        img: home_1,
-        title: 'Electronics',
-        link: '/'
-      },
-      {
-        img: home_2,
-        title: 'Fashion',
-        link: '/home-2'
-      },
-      {
-        img: home_3,
-        title: 'Beauty',
-        link: '/home-3'
-      },
-      {
-        img: home_4,
-        title: 'Jewelry',
-        link: '/home-4'
-      }
-    ]
+    single_link: true,
+    title: "Home",
+    link: "/",
   },
   {
     id: 2,
-    sub_menu: true,
-    title: 'Products',
-    link: '/shop',
-    sub_menus: [
-      { title: 'Shop', link: '/shop' },
-      { title: 'Right Sidebar', link: '/shop-right-sidebar' },
-      { title: 'Hidden Sidebar', link: '/shop-hidden-sidebar' },
-      { title: 'Only Categories', link: '/shop-category' },
-      { title: 'Product Simple', link: '/product-details' },
-      { title: 'With Video', link: '/product-details-video' },
-      { title: 'With Countdown Timer', link: '/product-details-countdown' },
-      { title: 'Variations Swatches', link: '/product-details-swatches' },
-    ],
+    single_link: true,
+    title: "About",
+    link: "/about",
   },
   {
     id: 3,
     sub_menu: true,
-    title: 'eCommerce',
-    link: '/cart',
+    title: "Handyman",
+    link: "/handyman",
     sub_menus: [
-      { title: 'Shopping Cart', link: '/cart' },
-      { title: 'Compare', link: '/compare' },
-      { title: 'Wishlist', link: '/wishlist' },
-      { title: 'Checkout', link: '/checkout' },
-      { title: 'My account', link: '/profile' },
+      { title: "Home Maintenance", link: "/home-maintenance" },
+      { title: "Emergency Home Repair", link: "/emergency-home-repair" },
+      { title: "Local Handyman", link: "/local-handyman" },
+      {
+        title: "Tv Wall Bracket Installation",
+        link: "/tv-wall-bracket-installation",
+      },
+      {
+        title: "Floating Shelves Hanging",
+        link: "/floating-shelves-hanging",
+      },
+      { title: "Curtains Installation", link: "/curtains-installation" },
+      { title: "Cheap Handyman", link: "/Cheap Handyman" },
     ],
   },
   {
     id: 4,
     sub_menu: true,
-    title: 'More Pages',
-    link: '/login',
+    title: "Carpenter",
+    link: "/carpenter",
     sub_menus: [
-      { title: 'Login', link: '/login' },
-      { title: 'Register', link: '/register' },
-      { title: 'Forgot Password', link: '/forgot' },
-      { title: '404 Error', link: '/404' },
+      { title: "Handyman Carpenter", link: "/handyman-carpenter" },
+      { title: "Partition Wall Making", link: "/partition-wall-making" },
+      { title: "With Countdown Timer", link: "/product-details-countdown" },
+      { title: "Furniture Assembly", link: "/furniture-assembly" },
     ],
-  },
-  {
-    id: 4,
-    single_link: true,
-    title: 'Coupons',
-    link: '/coupon',
   },
   {
     id: 5,
     sub_menu: true,
-    title: 'Blog',
-    link: '/blog',
+
+    title: "Electrician",
+    link: "/electrician",
     sub_menus: [
-      { title: 'Blog Standard', link: '/blog' },
-      { title: 'Blog Grid', link: '/blog-grid' },
-      { title: 'Blog List', link: '/blog-list' },
-      { title: 'Blog Details', link: '/blog-details' },
-      { title: 'Blog Details Full Width', link: '/blog-details-2' },
-    ]
+      { title: "Emergency Electrician", link: "/emergency-electrician" },
+      { title: "Handyman Electrician", link: "/handyman-electrician" },
+      {
+        title: "Fixing Chandelier Light",
+        link: "/fixing-chandelier-light",
+      },
+      {
+        title: "Hanging Lamp Light",
+        link: "/hanging-lamp-light",
+      },
+    ],
   },
   {
     id: 6,
-    single_link: true,
-    title: 'Contact',
-    link: '/contact',
+    sub_menu: true,
+    title: "Home Appliances",
+    link: "/home-appliances",
+    sub_menus: [
+      { title: "Washing Machine Repair", link: "/Washing Machine Repair" },
+      {
+        title: "AC Filter Duct Cleaning",
+        link: "/ac-filter-duct-cleaning",
+      },
+      {
+        title: "AC Repair Services",
+        link: "/ac-repair-services",
+      },
+      {
+        title: "Fridge Repair",
+        link: "/fridge-repair",
+      },
+    ],
   },
-]
+  {
+    id: 7,
+    sub_menu: true,
+    title: "Plumber",
+    link: "/plumber",
+    sub_menus: [
+      { title: "Emergency Plumber", link: "/emergency-plumber" },
+      { title: "Blocked Drain Cleaner", link: "/blocked-drain-cleaner" },
+      {
+        title: "Electric Water Heater Repair",
+        link: "/electric-water-heater-repair",
+      },
+    ],
+  },
+  {
+    id: 8,
+    sub_menu: true,
+
+    title: "Painter",
+    link: "/painter",
+    sub_menus: [
+      { title: "Wallpaper Mixing", link: "/wallpaper-mixing" },
+      { title: "Wall Painting", link: "/wall-painting" },
+    ],
+  },
+  {
+    id: 9,
+    single_link: true,
+    title: "Contact",
+    link: "/contact",
+  },
+];
