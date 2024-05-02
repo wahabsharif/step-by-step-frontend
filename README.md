@@ -1,4 +1,4 @@
-# Shofy – Full Stack eCommerce Web Application + Admin Panel
+<!-- # Shofy – Full Stack eCommerce Web Application + Admin Panel
 
 
 ![Shofy Image Banner](https://i.ibb.co/KsDDmmg/shofy-banner.png)
@@ -140,4 +140,4 @@ We hope you find Shofy to be a powerful and effective solution for your eCommerc
 
 
 
- 
+  -->
